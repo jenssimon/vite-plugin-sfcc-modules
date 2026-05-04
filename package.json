@@ -1,0 +1,64 @@
+{
+  "name": "vite-plugin-sfcc-modules",
+  "version": "0.0.0-development",
+  "description": "Vite plugin to handle non-standard module paths used by Salesforce Commerce Cloud (SFCC)",
+  "keywords": [
+    "cartridge",
+    "commercecloud",
+    "demandware",
+    "salesforce",
+    "sfcc",
+    "sfra",
+    "supermodule",
+    "vite",
+    "vite-plugin"
+  ],
+  "license": "MIT",
+  "author": "Jens Simon <https://github.com/jenssimon>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jenssimon/vite-plugin-sfcc-modules"
+  },
+  "files": [
+    "/dist"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "test": "vp test",
+    "check": "vp check",
+    "prepublishOnly": "vp run build",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "@vitest/coverage-v8": "^4.1.5",
+    "semantic-release": "^25.0.0",
+    "typescript": "^6.0.0",
+    "vite-plus": "latest"
+  },
+  "peerDependencies": {
+    "vite": ">=5.0.0"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "packageManager": "pnpm@10.33.2",
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+      "vitest": "npm:@voidzero-dev/vite-plus-test@latest"
+    }
+  }
+}
