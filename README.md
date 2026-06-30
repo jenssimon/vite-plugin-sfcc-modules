@@ -4,6 +4,12 @@
 [![npm](https://img.shields.io/npm/v/vite-plugin-sfcc-modules)](https://www.npmjs.com/package/vite-plugin-sfcc-modules)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+> [!WARNING]
+> This package is deprecated and no longer maintained.
+> It is continued as `@commerce-klaus/vite-plugin-sfcc-modules` in the Commerce Klaus monorepo:
+> [https://github.com/commerce-klaus/commerce-klaus/tree/main/packages/vite-plugin-sfcc-modules](https://github.com/commerce-klaus/commerce-klaus/tree/main/packages/vite-plugin-sfcc-modules)
+> Please migrate to the new package.
+
 A Vite plugin that resolves Salesforce Commerce Cloud (SFCC) server-side module patterns.
 
 This package originates from `babel-plugin-sfcc-modules` and is the port to a modern Vite ecosystem. The goal is the same DX for SFCC module resolution, but natively in Vite/Vitest without a Babel runtime layer.
